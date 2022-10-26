@@ -44,8 +44,8 @@
     - 문제를 해결 할때 마다 commit 지향
     - commit 메시지 : [문제 플랫폼]/문제 번호/해결여부
     - commit 작성방식 예시
-      - [백준]/1220/성공
-      - [백준]/1220/실패
+      - [BOJ]2581/success
+      - [BOJ]2581/fail
   
 ## 🌟문제 플랫폼
 <a href = "https://www.acmicpc.net/"><img src="https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png" height="50px"></a>
