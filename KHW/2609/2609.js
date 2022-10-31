@@ -7,26 +7,12 @@ input = input.map((el)=> +el)//.split(' ')
 const a = input[0];
 const b = input[1];
 
-// 최대공약수와 최소 공배수 구하기
+// 유클리드 호제법으로 최대공약수와 최소 공배수 구하기
 function solution(a, b) {
-  let greatest = 0;
-  let least = 0;
+  let greatest = (a, b) => a % b === 0 ? b : greatest(b, a % b);
+  let least = (a, b) => a * b / greatest(a, b);
 
-  // 최대 공약수 구하기
-  for(let i = 1; i <= (a > b ? b : a); i++) {
-    if(a % i === 0 && b % i === 0) {
-      greatest = i;
-    }
-  }
-
-  // 최소 공배수 구하기
-  for(let i = (a > b ? a : b); i <= a * b; i++) {
-    if(i % a === 0 && i % b === 0) {
-      least = i;
-      break;
-    }
-  }
-  console.log(greatest, least);
+  console.log(greatest(a, b), least(a, b));
 }
-
+  
 solution(a, b);
