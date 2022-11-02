@@ -9,10 +9,10 @@ let fs = require('fs');
 let input = fs.readFileSync('./dev/2693').toString().split('\n');
 
 let count = Number(input[0])    //-> 4
-let arr = [count];
+let arr = [];
 
 for(let i=0;i<count;i++){
-    arr[i]=input[i+1].replace('\r','').split(' ').sort((a,b)=>a-b).reverse()
+    arr[i]=input[i+1].split(' ').sort((a,b)=>b-a)
     console.log(Number(arr[i][2]))
 }
 
