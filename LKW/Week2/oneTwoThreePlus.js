@@ -17,13 +17,15 @@ input = input.map((el) => Number(el));
 
 let resultArr = [1, 1, 2, 4];
 
-for (let i = 1; i <= input[0]; i++) {
-    const oneTwoThreeSumFunc = (n) => {
-        if (resultArr[n] === undefined) {
-            return oneTwoThreeSumFunc(n - 3) + oneTwoThreeSumFunc(n - 2) + oneTwoThreeSumFunc(n - 1);
-        } else {
-            return resultArr[n];
-        }
+const oneTwoThreeSumFunc = (n) => {
+    if (resultArr[n] === undefined) {
+        return oneTwoThreeSumFunc(n - 3) + oneTwoThreeSumFunc(n - 2) + oneTwoThreeSumFunc(n - 1);
+    } else {
+        return resultArr[n];
     }
+}
+
+for (let i = 1; i <= input[0]; i++) {
+
     console.log(oneTwoThreeSumFunc(input[i]));
 }

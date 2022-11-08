@@ -14,7 +14,8 @@ const func = (n, k) => {
     if (ho[n][k] !== undefined) {
         return ho[n][k]
     } else {
-        return ho[n][k] = func(n, k - 1) + func(n - 1, k)
+        ho[n][k] = func(n, k - 1) + func(n - 1, k)
+        return ho[n][k]
     }
 }
 
