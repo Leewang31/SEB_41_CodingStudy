@@ -1,3 +1,4 @@
+// 설탕배달
 const fs = require('fs');
 const filePath = process.platform === 'linux' ? '/dev/stdin' : './2839.txt';
 let input = fs.readFileSync(filePath).toString().split(' ');
