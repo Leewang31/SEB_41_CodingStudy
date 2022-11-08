@@ -13,16 +13,16 @@ let input = fs.readFileSync('./dev/9095').toString().split('\n');
  * 5 -> 5, [4]+1, [3]+2, [2]+3
  * */
 
-input = input.map((el) => Number(el))
+input = input.map((el) => Number(el));
 
-let resultArr = [1, 1, 2, 4]
+let resultArr = [1, 1, 2, 4];
 
 for (let i = 1; i <= input[0]; i++) {
     const oneTwoThreeSumFunc = (n) => {
         if (resultArr[n] === undefined) {
-            return oneTwoThreeSumFunc(n - 3) + oneTwoThreeSumFunc(n - 2) + oneTwoThreeSumFunc(n - 1)
+            return oneTwoThreeSumFunc(n - 3) + oneTwoThreeSumFunc(n - 2) + oneTwoThreeSumFunc(n - 1);
         } else {
-            return resultArr[n]
+            return resultArr[n];
         }
     }
     console.log(oneTwoThreeSumFunc(input[i]));
