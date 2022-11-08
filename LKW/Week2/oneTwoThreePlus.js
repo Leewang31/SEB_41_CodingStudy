@@ -19,13 +19,13 @@ let resultArr = [1, 1, 2, 4];
 
 const oneTwoThreeSumFunc = (n) => {
     if (resultArr[n] === undefined) {
-        return oneTwoThreeSumFunc(n - 3) + oneTwoThreeSumFunc(n - 2) + oneTwoThreeSumFunc(n - 1);
+        resultArr[n] =  oneTwoThreeSumFunc(n - 3) + oneTwoThreeSumFunc(n - 2) + oneTwoThreeSumFunc(n - 1);
+        return resultArr[n];
     } else {
         return resultArr[n];
     }
 }
 
 for (let i = 1; i <= input[0]; i++) {
-
     console.log(oneTwoThreeSumFunc(input[i]));
 }
