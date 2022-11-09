@@ -11,7 +11,7 @@ let input = require('fs').readFileSync('1978/1978.txt').toString().split('\n');
 // console.log(input);
 // let cases = Number(input[0]);
 // console.log(cases);
-let splitInput = input[1].split(' ').map(el=>Number(el))
+let splitInput = input[1].split(' ').map(el=>Number(el)) //=> [1,3,5,7]
 console.log(splitInput);
 
 // 접근방법
@@ -26,6 +26,7 @@ let output = 0;
 //count: 소수가 아닌 값들을 카운트
 let count = 0;
 
+//소수: 1보다 큰 자연수 중, 1과 자기 자신만을 약수로 가지는 수
 for (let i = 0; i < splitInput.length; i++) {
   if (splitInput[i] === 1) {
     continue;
@@ -65,5 +66,3 @@ console.log(output);
 
 
 
-//소수: 1보다 큰 자연수 중, 1과 자기 자신만을 약수로 가지는 수
-// 2랑 3으로 
