@@ -7,7 +7,7 @@
 // let input = fs.readFileSync('/dev/stdin').toString().split('\n');
 
 // vscode에서의 테스트용
-let input = require('fs').readFileSync('2775/2775.txt').toString().split('\n');
+let input = require('fs').readFileSync('2775/2775.txt').toString().split('\n'); //=> ['2','1','3','2','3']
 // console.log(input);
 
 let cases = Number(input.shift()); //=> 2
@@ -15,9 +15,9 @@ let cases = Number(input.shift()); //=> 2
 
 for (let i = 0; i <cases; i++) {
     //k=층 , n=호 구분
-    const k = +input.shift();
-    const n = +input.shift();
-   
+    const k = Number(input.shift()); //=> 1,2
+    const n = Number(input.shift()); //=>3,3
+
     // 각 층과 호의 인원수를 지정할 2차원 배열 선언
     const house = Array.from(Array(k + 1), () => Array(n).fill(0));
     console.log(house)

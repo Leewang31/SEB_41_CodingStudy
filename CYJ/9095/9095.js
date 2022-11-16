@@ -2,7 +2,6 @@
 // let fs = require('fs');
 // let input = fs.readFileSync('/dev/stdin').toString().split(' ');
 
-const { findSourceMap } = require('module');
 
 // 여러 줄로 입력을 받을 때 (백준 제출용)
 // let fs = require('fs');
