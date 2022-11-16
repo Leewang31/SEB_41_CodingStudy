@@ -1,7 +1,5 @@
 # ✨ SEB_41_CodingStudy
 
----
-
 ## 🌟 참여자
   
 - CYJ
