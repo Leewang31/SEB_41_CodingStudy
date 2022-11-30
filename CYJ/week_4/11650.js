@@ -1,5 +1,5 @@
-let [n,...arr] = require('fs').readFileSync('week_4/11650.txt').toString().split('\n');
-console.log(arr)
+let [n,...arr] = require('fs').readFileSync('week_4/11650.txt').toString().trim().split('\n');
+// console.log(arr)
 
 // let [n, ...arr] = require("fs").readFileSync("/dev/stdin").toString().trim().split("\n");
 
