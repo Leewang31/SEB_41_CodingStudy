@@ -2,21 +2,22 @@
 // const filePath = process.platform === 'linux' ? '/dev/stdin' : './10814.txt';
 // let input = fs.readFileSync(filePath).toString().split('\n')
 // const T = input.shift();
-
+// ['20 dhfkjd', '21 ksjdhfkj', '21 ldsfhkjs']
 // input.sort((a, b) => a.split(' ')[0] - b.split(' ')[0]);
 
 // console.log(input.join('\n'));
 
-
-const input = require('fs').readFileSync('/dev/stdin').toString().trim().split("\n");
+const input = require("fs")
+  .readFileSync("/dev/stdin")
+  .toString()
+  .trim()
+  .split("\n");
 
 const len = input.shift();
 
 input.sort((a, b) => a.split(" ")[0] - b.split(" ")[0]);
 
 console.log(input.join("\n"));
-
-
 
 // 숫자로 먼저 정렬하고 숫자가 같으면 순서대로 정렬
 // split 으로 숫자랑 문자 분리해주기
