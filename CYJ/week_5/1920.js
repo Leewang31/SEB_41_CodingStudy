@@ -1,5 +1,5 @@
 let input = require('fs').readFileSync('week_5/1920.txt').toString().trim().split('\n');
-console.log(input);
+// console.log(input);
 
 // let input = require("fs").readFileSync("/dev/stdin").toString().trim().split("\n");
 
@@ -15,8 +15,9 @@ B.forEach(num => {
     let res = false; //값의 존재유무 판별
     while (start <= end) {
         let mid = parseInt((start + end) / 2); // 탐색대상의 시작과 끝의 중간값
-        if (num < A[mid]) { // B배열의 요소가 탐색 대상의 중간값보다 작으면 중간값에 -1을 해서 탐색범위를 줄임
-            end = mid - 1; // 
+    
+        if (num < A[mid]) { // B배열의 요소가 탐색 대상의 중간값보다 작으면 중간값에 -1을 해서 탐색범위를 줄임 //1,2,3,4,5
+            end = mid - 1; 
         } else if (num > A[mid]) { // 반대로 크면, 중간값 + 1해서 탐색 범위를 줄여줌
             start = mid + 1;
         } else {
