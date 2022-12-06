@@ -14,6 +14,6 @@ const [N, A, M, B] = input.map(v => v.split(" "));
 
 const array = new Set(A);
 console.log(array)
-const result = B.map(v => array.has(v) ? 1 : 0);
+const result = B.map(v => array.has(v) ? 1 : 0);  // A랑 B랑 비교해서 3항 연산(가지고 있으면 1, 아니면 0 도출) 
 
-console.log(result.join("\n"));
+console.log(result.join("\n")); //띄어쓰기로 출력
