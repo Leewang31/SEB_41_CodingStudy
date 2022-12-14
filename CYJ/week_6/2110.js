@@ -6,7 +6,7 @@ let [n,c,...position] = require("fs").readFileSync("week_6/2110.txt").toString()
 //공유기의 개수(c) : 3
 //집의 좌표 (position): [1,2,8,4,9]
 
-position.sort((a,b)=>a-b);
+position.sort((a,b)=>a-b); //[1,2,4,8,9]
 
 const isInstall = (distance)=>{
     // console.log(distance) => 5,2,3,4
