@@ -1,4 +1,4 @@
-const [input, ...inputs] = require('fs').readFileSync('/dev/2178').toString().trim().split("\n");
+const [input, ...inputs] = require('fs').readFileSync('/dev/stdin').toString().trim().split("\n");
 const [N, M] = input.trim().split(' ').map((e) => +e);
 let maze = []
 const check = Array.from(Array(N), () => new Array(M).fill(0))
